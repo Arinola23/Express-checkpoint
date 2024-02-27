@@ -1,24 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: azure;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/service">Our Services</a></li>
-                <li><a href="/contact">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div class="home">
-        <h1>Welcome</h1>
-        <p>At our company, we render free services on selected days, kindly click on  the services link <a href="/services">Services</a> to check for the available days and other services we render</p>
+    <nav>
+        <a href="/">Home</a> | 
+        <a href="/services">Our Services</a> | 
+        <a href="/contact">Contact Us</a>
+    </nav>
+    <div class="container">
+        <h1 style="font-size: 70px;">Welcome to our website!</h1>
+        <p>This is the home page.</p>
     </div>
 </body>
 </html>
